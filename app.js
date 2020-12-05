@@ -35,6 +35,7 @@ function load_search(val,callback){
     }
     xhr.send();
 }
+
 function load_img(condition,callback){
     xhr.open('GET',`https://cors-anywhere.herokuapp.com/https://api.unsplash.com/search/photos/?query=${condition}&client_id=2W0dzVgSCk3OS--eFquY36P3CqBUooebuqsptNEIgGY`,true);
     xhr.onload = function(){

@@ -34,12 +34,13 @@ h2{
 #container{
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: left;
+    justify-content: flex-end;
+    align-items: flex-start;
     min-height: 100vh;
     position: relative;
-    z-index:2;
+    z-index:3;
     padding: 0 0 4rem 4rem;
+  
 }
 
 .search{
@@ -54,6 +55,7 @@ h2{
 .search input{
     border:none;
     padding:0.5rem 0.7rem;
+    outline: none;
 }
 
 .search input[type = 'submit']{
@@ -70,6 +72,27 @@ h2{
 h1{
     margin:0.5rem 0;
 }
+
+@media(max-width:400px){
+    .search input[type="text"]{
+        width:calc(100vw - 63.8px);
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        position: relative;
+        z-index:3;
+        padding: 0;
+      
+    }
+}
+
+
 
 
 
