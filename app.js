@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 var xhr = new XMLHttpRequest();
 function load(lat,long,callback){
-    xhr.open('GET',`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=ddda5451bf114a61bf9160038201010&q=${lat},${long}`,true);
+    xhr.open('GET',`https://hidden-beach-73186.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=ddda5451bf114a61bf9160038201010&q=${lat},${long}`,true);
     xhr.onload = function(){
         if(this.status == 200){
             var msg = JSON.parse(this.responseText);
@@ -26,7 +26,7 @@ function load(lat,long,callback){
 }
 
 function load_search(val,callback){
-    xhr.open('GET',`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=ddda5451bf114a61bf9160038201010&q=${val}`,true);
+    xhr.open('GET',`https://hidden-beach-73186.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=ddda5451bf114a61bf9160038201010&q=${val}`,true);
     xhr.onload = function(){
         if(this.status == 200){
             var msg = JSON.parse(this.responseText);
@@ -37,7 +37,7 @@ function load_search(val,callback){
 }
 
 function load_img(condition,callback){
-    xhr.open('GET',`https://cors-anywhere.herokuapp.com/https://api.unsplash.com/search/photos/?query=${condition}&client_id=2W0dzVgSCk3OS--eFquY36P3CqBUooebuqsptNEIgGY`,true);
+    xhr.open('GET',`https://hidden-beach-73186.herokuapp.com/https://api.unsplash.com/search/photos/?query=${condition}&client_id=2W0dzVgSCk3OS--eFquY36P3CqBUooebuqsptNEIgGY`,true);
     xhr.onload = function(){
         if(this.status == 200){
             var msg = JSON.parse(this.responseText);
